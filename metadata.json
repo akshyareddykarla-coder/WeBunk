@@ -1,0 +1,6 @@
+{
+  "name": "WeBunk",
+  "description": "Track Smart. Bunk Smarter. Attendance tracking and safe bunk calculator for college students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
