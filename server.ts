@@ -97,11 +97,6 @@ function generateFallbackSuggestions(subjects: any[], targetThreshold: number): 
 
       const ai = new GoogleGenAI({
         apiKey: apiKey,
-        httpOptions: {
-          headers: {
-            'User-Agent': 'aistudio-build',
-          }
-        }
       });
 
       const subjectsText = subjects.map((s: any) => 
@@ -253,9 +248,6 @@ Return a JSON array of exactly 3 strings. Do not wrap in markdown blocks, just r
 
       const ai = new GoogleGenAI({
         apiKey: apiKey,
-        httpOptions: {
-          headers: { 'User-Agent': 'aistudio-build' }
-        }
       });
 
       const subjectsText = (subjects || []).map((s: any) => 
@@ -415,9 +407,6 @@ Return JSON in exactly the requested schema.`;
 
       const ai = new GoogleGenAI({
         apiKey: apiKey,
-        httpOptions: {
-          headers: { 'User-Agent': 'aistudio-build' }
-        }
       });
 
       // Prepare function declarations
@@ -657,9 +646,6 @@ Return JSON in exactly the requested schema.`;
 
       const ai = new GoogleGenAI({
         apiKey: apiKey,
-        httpOptions: {
-          headers: { 'User-Agent': 'aistudio-build' }
-        }
       });
 
       const subjectsListStr = (subjects || []).map((s: any) => `- ID: "${s.id}", Name: "${s.name}"`).join("\n");
